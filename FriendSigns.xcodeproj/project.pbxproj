@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF230CAF1B8E018700A20EF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF230CAE1B8E018700A20EF4 /* AppDelegate.swift */; };
+		AF230CB61B8E018700A20EF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF230CB51B8E018700A20EF4 /* Images.xcassets */; };
+		AF230CB91B8E018700A20EF4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF230CB71B8E018700A20EF4 /* LaunchScreen.xib */; };
+		AF230CC51B8E018700A20EF4 /* FriendSignsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF230CC41B8E018700A20EF4 /* FriendSignsTests.swift */; };
+		AF230CD31B8E08B500A20EF4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF230CD11B8E08B500A20EF4 /* LoginViewController.swift */; };
+		AF230CD41B8E08B500A20EF4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF230CD21B8E08B500A20EF4 /* LoginViewController.xib */; };
+		AF230CD71B8E0D6800A20EF4 /* FriendSignsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF230CD51B8E0D6800A20EF4 /* FriendSignsViewController.swift */; };
+		AF230CD81B8E0D6800A20EF4 /* FriendSignsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF230CD61B8E0D6800A20EF4 /* FriendSignsViewController.xib */; };
+		AF230CDB1B8E195500A20EF4 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF230CD91B8E195500A20EF4 /* FriendCell.swift */; };
+		AF230CDC1B8E195500A20EF4 /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF230CDA1B8E195500A20EF4 /* FriendCell.xib */; };
+		AF230CE01B8E387D00A20EF4 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF230CDF1B8E387D00A20EF4 /* Friend.swift */; };
+		DFF00A820D283E2CAEB90932 /* libPods-FriendSigns.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC48577A6C5E97DB51904D93 /* libPods-FriendSigns.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF230CBF1B8E018700A20EF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF230CA11B8E018700A20EF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF230CA81B8E018700A20EF4;
+			remoteInfo = FriendSigns;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7209B150611C8339B3C694BE /* Pods-FriendSigns.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendSigns.release.xcconfig"; path = "Pods/Target Support Files/Pods-FriendSigns/Pods-FriendSigns.release.xcconfig"; sourceTree = "<group>"; };
+		AF230CA91B8E018700A20EF4 /* FriendSigns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendSigns.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF230CAD1B8E018700A20EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF230CAE1B8E018700A20EF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF230CB51B8E018700A20EF4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AF230CB81B8E018700A20EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AF230CBE1B8E018700A20EF4 /* FriendSignsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendSignsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF230CC31B8E018700A20EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF230CC41B8E018700A20EF4 /* FriendSignsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendSignsTests.swift; sourceTree = "<group>"; };
+		AF230CCE1B8E03FE00A20EF4 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		AF230CD11B8E08B500A20EF4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AF230CD21B8E08B500A20EF4 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		AF230CD51B8E0D6800A20EF4 /* FriendSignsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSignsViewController.swift; sourceTree = "<group>"; };
+		AF230CD61B8E0D6800A20EF4 /* FriendSignsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendSignsViewController.xib; sourceTree = "<group>"; };
+		AF230CD91B8E195500A20EF4 /* FriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		AF230CDA1B8E195500A20EF4 /* FriendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
+		AF230CDF1B8E387D00A20EF4 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		CC48577A6C5E97DB51904D93 /* libPods-FriendSigns.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FriendSigns.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA35AF94F3171949B2CD6AFF /* Pods-FriendSigns.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendSigns.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FriendSigns/Pods-FriendSigns.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF230CA61B8E018700A20EF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF00A820D283E2CAEB90932 /* libPods-FriendSigns.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF230CBB1B8E018700A20EF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67351273DA76B6F73FB513FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC48577A6C5E97DB51904D93 /* libPods-FriendSigns.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF230CA01B8E018700A20EF4 = {
+			isa = PBXGroup;
+			children = (
+				AF230CAB1B8E018700A20EF4 /* FriendSigns */,
+				AF230CC11B8E018700A20EF4 /* FriendSignsTests */,
+				AF230CAA1B8E018700A20EF4 /* Products */,
+				D86EAD7FBD3EC751CF239C4F /* Pods */,
+				67351273DA76B6F73FB513FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF230CAA1B8E018700A20EF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF230CA91B8E018700A20EF4 /* FriendSigns.app */,
+				AF230CBE1B8E018700A20EF4 /* FriendSignsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF230CAB1B8E018700A20EF4 /* FriendSigns */ = {
+			isa = PBXGroup;
+			children = (
+				AF230CAE1B8E018700A20EF4 /* AppDelegate.swift */,
+				AF230CB51B8E018700A20EF4 /* Images.xcassets */,
+				AF230CB71B8E018700A20EF4 /* LaunchScreen.xib */,
+				AF230CAC1B8E018700A20EF4 /* Supporting Files */,
+				AF230CCE1B8E03FE00A20EF4 /* Bridging-Header.h */,
+				AF230CD11B8E08B500A20EF4 /* LoginViewController.swift */,
+				AF230CD21B8E08B500A20EF4 /* LoginViewController.xib */,
+				AF230CD51B8E0D6800A20EF4 /* FriendSignsViewController.swift */,
+				AF230CD61B8E0D6800A20EF4 /* FriendSignsViewController.xib */,
+				AF230CD91B8E195500A20EF4 /* FriendCell.swift */,
+				AF230CDA1B8E195500A20EF4 /* FriendCell.xib */,
+				AF230CDF1B8E387D00A20EF4 /* Friend.swift */,
+			);
+			path = FriendSigns;
+			sourceTree = "<group>";
+		};
+		AF230CAC1B8E018700A20EF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF230CAD1B8E018700A20EF4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF230CC11B8E018700A20EF4 /* FriendSignsTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF230CC41B8E018700A20EF4 /* FriendSignsTests.swift */,
+				AF230CC21B8E018700A20EF4 /* Supporting Files */,
+			);
+			path = FriendSignsTests;
+			sourceTree = "<group>";
+		};
+		AF230CC21B8E018700A20EF4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF230CC31B8E018700A20EF4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D86EAD7FBD3EC751CF239C4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA35AF94F3171949B2CD6AFF /* Pods-FriendSigns.debug.xcconfig */,
+				7209B150611C8339B3C694BE /* Pods-FriendSigns.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF230CA81B8E018700A20EF4 /* FriendSigns */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF230CC81B8E018700A20EF4 /* Build configuration list for PBXNativeTarget "FriendSigns" */;
+			buildPhases = (
+				AC53F507D37310188EC1C0E0 /* Check Pods Manifest.lock */,
+				AF230CA51B8E018700A20EF4 /* Sources */,
+				AF230CA61B8E018700A20EF4 /* Frameworks */,
+				AF230CA71B8E018700A20EF4 /* Resources */,
+				4CDB2D79258994E9A591A775 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FriendSigns;
+			productName = FriendSigns;
+			productReference = AF230CA91B8E018700A20EF4 /* FriendSigns.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF230CBD1B8E018700A20EF4 /* FriendSignsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF230CCB1B8E018700A20EF4 /* Build configuration list for PBXNativeTarget "FriendSignsTests" */;
+			buildPhases = (
+				AF230CBA1B8E018700A20EF4 /* Sources */,
+				AF230CBB1B8E018700A20EF4 /* Frameworks */,
+				AF230CBC1B8E018700A20EF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF230CC01B8E018700A20EF4 /* PBXTargetDependency */,
+			);
+			name = FriendSignsTests;
+			productName = FriendSignsTests;
+			productReference = AF230CBE1B8E018700A20EF4 /* FriendSignsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF230CA11B8E018700A20EF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "max rogers";
+				TargetAttributes = {
+					AF230CA81B8E018700A20EF4 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					AF230CBD1B8E018700A20EF4 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = AF230CA81B8E018700A20EF4;
+					};
+				};
+			};
+			buildConfigurationList = AF230CA41B8E018700A20EF4 /* Build configuration list for PBXProject "FriendSigns" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF230CA01B8E018700A20EF4;
+			productRefGroup = AF230CAA1B8E018700A20EF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF230CA81B8E018700A20EF4 /* FriendSigns */,
+				AF230CBD1B8E018700A20EF4 /* FriendSignsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF230CA71B8E018700A20EF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF230CDC1B8E195500A20EF4 /* FriendCell.xib in Resources */,
+				AF230CB91B8E018700A20EF4 /* LaunchScreen.xib in Resources */,
+				AF230CD81B8E0D6800A20EF4 /* FriendSignsViewController.xib in Resources */,
+				AF230CB61B8E018700A20EF4 /* Images.xcassets in Resources */,
+				AF230CD41B8E08B500A20EF4 /* LoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF230CBC1B8E018700A20EF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CDB2D79258994E9A591A775 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FriendSigns/Pods-FriendSigns-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC53F507D37310188EC1C0E0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF230CA51B8E018700A20EF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF230CD31B8E08B500A20EF4 /* LoginViewController.swift in Sources */,
+				AF230CD71B8E0D6800A20EF4 /* FriendSignsViewController.swift in Sources */,
+				AF230CE01B8E387D00A20EF4 /* Friend.swift in Sources */,
+				AF230CAF1B8E018700A20EF4 /* AppDelegate.swift in Sources */,
+				AF230CDB1B8E195500A20EF4 /* FriendCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF230CBA1B8E018700A20EF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF230CC51B8E018700A20EF4 /* FriendSignsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF230CC01B8E018700A20EF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF230CA81B8E018700A20EF4 /* FriendSigns */;
+			targetProxy = AF230CBF1B8E018700A20EF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF230CB71B8E018700A20EF4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF230CB81B8E018700A20EF4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF230CC61B8E018700A20EF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF230CC71B8E018700A20EF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF230CC91B8E018700A20EF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA35AF94F3171949B2CD6AFF /* Pods-FriendSigns.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FriendSigns/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FriendSigns/Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		AF230CCA1B8E018700A20EF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7209B150611C8339B3C694BE /* Pods-FriendSigns.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FriendSigns/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FriendSigns/Bridging-Header.h";
+			};
+			name = Release;
+		};
+		AF230CCC1B8E018700A20EF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FriendSignsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FriendSigns.app/FriendSigns";
+			};
+			name = Debug;
+		};
+		AF230CCD1B8E018700A20EF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FriendSignsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FriendSigns.app/FriendSigns";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF230CA41B8E018700A20EF4 /* Build configuration list for PBXProject "FriendSigns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF230CC61B8E018700A20EF4 /* Debug */,
+				AF230CC71B8E018700A20EF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF230CC81B8E018700A20EF4 /* Build configuration list for PBXNativeTarget "FriendSigns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF230CC91B8E018700A20EF4 /* Debug */,
+				AF230CCA1B8E018700A20EF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF230CCB1B8E018700A20EF4 /* Build configuration list for PBXNativeTarget "FriendSignsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF230CCC1B8E018700A20EF4 /* Debug */,
+				AF230CCD1B8E018700A20EF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF230CA11B8E018700A20EF4 /* Project object */;
+}
