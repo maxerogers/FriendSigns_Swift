@@ -22,11 +22,11 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loginButton.readPermissions = ["public_profile", "user_birthday", "user_friends"]
+        loginButton.addTarget(self, action: "loginButtonClicked", forControlEvents: UIControlEvents.TouchUpInside)
         // Do any additional setup after loading the view.
         if let token = FBSDKAccessToken.currentAccessToken() {
             // User is logged in, do work such as go to next view controller.
-//            self.navigationController?.setViewControllers([FriendSignsViewController(nibName: "FriendSignsViewController", bundle: nil)], animated: true)
-            self.navigationController?.pushViewController(FriendSignsViewController(nibName: "FriendSignsViewController", bundle: nil), animated: true)
+            successfullyLoggedIn()
         }
     }
 
@@ -35,6 +35,24 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func loginButtonClicked() {
+        var login = FBSDKLoginManager()
+        login.logInWithReadPermissions(loginButton.readPermissions, handler: { (result, error) -> Void in
+            if error != nil {
+                println("Process error")
+            }
+            else if result.isCancelled {
+                println("Cancelled")
+            }
+            else {
+                self.successfullyLoggedIn()
+            }
+        })
+    }
+    
+    func successfullyLoggedIn() {
+        self.navigationController?.pushViewController(FriendSignsViewController(nibName: "FriendSignsViewController", bundle: nil), animated: true)
+    }
 
     /*
     // MARK: - Navigation
