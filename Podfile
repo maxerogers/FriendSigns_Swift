@@ -4,6 +4,7 @@
 target 'FriendSigns' do
   pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
+  pod 'SDWebImage'
 end
 
 target 'FriendSignsTests' do

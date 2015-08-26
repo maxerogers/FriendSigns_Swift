@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E466830DA17CFD0513A376AF"
+               BlueprintIdentifier = "5803717EFD91D0D90E55C472"
                BuildableName = "libPods-FriendSigns.a"
                BlueprintName = "Pods-FriendSigns"
                ReferencedContainer = "container:Pods.xcodeproj">

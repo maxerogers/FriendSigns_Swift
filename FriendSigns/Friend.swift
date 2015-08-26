@@ -13,10 +13,12 @@ class Friend {
     let birthday:String
     let sign:String
     let id:String
-    init (name:String, id:String, birthday:String, sign:String) {
+    let avatarUrl:NSURL
+    init (name:String, id:String, birthday:String, sign:String, avatarUrl:String) {
         self.name = name
         self.birthday = birthday
         self.sign = sign
         self.id = id
+        self.avatarUrl = NSURL(string: avatarUrl)!
     }
 }

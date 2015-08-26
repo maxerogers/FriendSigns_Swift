@@ -32,7 +32,7 @@ class FriendSignsViewController: UIViewController, UITableViewDataSource, UITabl
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
-        
+        tableView.registerNib(UINib(nibName: "FriendCell", bundle: nil), forCellReuseIdentifier: "friendCell")
         loadData()
     }
 
@@ -65,7 +65,7 @@ class FriendSignsViewController: UIViewController, UITableViewDataSource, UITabl
         var components = NSCalendar.currentCalendar().components(NSCalendarUnit.DayCalendarUnit | NSCalendarUnit.MonthCalendarUnit | NSCalendarUnit.YearCalendarUnit , fromDate: date)
         switch components.month {
         default:
-            result = "Pisces"
+            result = "pisces"
         }
         return result
     }
@@ -75,13 +75,14 @@ class FriendSignsViewController: UIViewController, UITableViewDataSource, UITabl
         //Get user's information
         //me?fields=name,birthday // user's info
         //me/friends?fields=name,birthday //friends' info
-        FBSDKGraphRequest(graphPath: "me/friends?fields=name,birthday", parameters: nil).startWithCompletionHandler({ (connection, object, error) -> Void in
+        FBSDKGraphRequest(graphPath: "me/friends?fields=name,birthday,picture", parameters: nil).startWithCompletionHandler({ (connection, object, error) -> Void in
             var friends = object["data"] as! NSArray
             println(friends)
             self.friends = [Friend]()
             for friend in friends {
                 let date = self.dateFromFacebookString(friend["birthday"] as! String) as NSDate
-                let newFriend = Friend(name: friend["name"] as! String, id: friend["id"] as! String, birthday: friend["birthday"] as! String, sign: self.signFromDate(date))
+                var dict:NSDictionary = friend["picture"] as! NSDictionary
+                let newFriend = Friend(name: friend["name"] as! String, id: friend["id"] as! String, birthday: friend["birthday"] as! String, sign: self.signFromDate(date), avatarUrl: dict["data"]!["url"]! as! String)
                 self.friends.append(newFriend)
             }
             self.tableView.reloadData()
@@ -90,17 +91,22 @@ class FriendSignsViewController: UIViewController, UITableViewDataSource, UITabl
     
     // MARK: - TableView
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return friends.count
+        return self.friends.count
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let friendCell = "friendCell"
         var cell:FriendCell? = tableView.dequeueReusableCellWithIdentifier(friendCell) as? FriendCell
         if cell == nil{
-            tableView.registerNib(UINib(nibName: "FriendCell", bundle: nil), forCellReuseIdentifier: "friendCell")
             cell = FriendCell(style: UITableViewCellStyle.Default, reuseIdentifier: friendCell)
-            cell?.birthdayLabel?.text = self.friends[indexPath.row].birthday
-            cell?.userNameLabel?.text = self.friends[indexPath.row].name
+            
         }
+        cell?.userNameLabel.text = self.friends[indexPath.row].name
+        cell?.birthdayLabel.text = self.friends[indexPath.row].birthday
+        cell?.signImageView.image = UIImage(named: self.friends[indexPath.row].sign)
+        println(self.friends[indexPath.row].avatarUrl)
+        cell?.userAvatar.sd_setImageWithURL(self.friends[indexPath.row].avatarUrl, completed: { (image, error, type, url) -> Void in
+//            println("\nImage: \(image)\nError: \(error)\nType: \(type)\nUrl: \(url)")
+        })
         return cell!
     }
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
