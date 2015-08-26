@@ -21,4 +21,8 @@ class Friend {
         self.id = id
         self.avatarUrl = NSURL(string: avatarUrl)!
     }
+    
+    func copy() -> Friend {
+        return Friend(name: self.name, id: self.id, birthday: self.birthday, sign: self.sign, avatarUrl: self.avatarUrl.absoluteString!)
+    }
 }

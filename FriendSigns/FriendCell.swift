@@ -25,4 +25,8 @@ class FriendCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    class func heightForCell() -> CGFloat {
+        return 66
+    }
+    
 }

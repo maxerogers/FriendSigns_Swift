@@ -7,9 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FriendSignsViewController" customModule="FriendSigns" customModuleProvider="target">
             <connections>
-                <outlet property="searchButton" destination="fjM-5g-tu9" id="PIL-pM-hc4"/>
-                <outlet property="searchField" destination="CIo-Yz-sPv" id="9Wv-re-ZYx"/>
-                <outlet property="searchImage" destination="0QT-KN-uTf" id="pya-HQ-q27"/>
+                <outlet property="searchField" destination="oJe-oh-FTU" id="Unz-81-ZlN"/>
                 <outlet property="tableView" destination="4jY-WU-sPi" id="BGi-rG-fmA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -25,46 +23,19 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PaV-yH-J99">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0QT-KN-uTf">
-                                    <rect key="frame" x="8" y="0.0" width="40" height="40"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="EXb-dY-dpK"/>
-                                        <constraint firstAttribute="width" constant="40" id="p4q-in-3r0"/>
-                                    </constraints>
-                                </imageView>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Search" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CIo-Yz-sPv">
-                                    <rect key="frame" x="56" y="4" width="300" height="32"/>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oJe-oh-FTU">
+                                    <rect key="frame" x="60" y="4" width="480" height="32"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjM-5g-tu9">
-                                    <rect key="frame" x="372" y="4" width="60" height="32"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="60" id="IJK-OY-01g"/>
-                                    </constraints>
-                                    <state key="normal" title="Search">
-                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                </button>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="fjM-5g-tu9" firstAttribute="leading" secondItem="CIo-Yz-sPv" secondAttribute="trailing" constant="16" id="3la-JG-Z2N"/>
-                                <constraint firstItem="CIo-Yz-sPv" firstAttribute="centerY" secondItem="PaV-yH-J99" secondAttribute="centerY" id="BgA-oR-IIQ"/>
-                                <constraint firstItem="CIo-Yz-sPv" firstAttribute="centerX" secondItem="PaV-yH-J99" secondAttribute="centerX" id="D0j-6K-fV2"/>
                                 <constraint firstAttribute="height" constant="40" id="NJe-xI-33a"/>
-                                <constraint firstItem="CIo-Yz-sPv" firstAttribute="leading" secondItem="0QT-KN-uTf" secondAttribute="trailing" constant="8" id="Ryh-jV-d8L"/>
-                                <constraint firstItem="0QT-KN-uTf" firstAttribute="top" secondItem="PaV-yH-J99" secondAttribute="top" id="XaM-6f-8Ek"/>
-                                <constraint firstItem="fjM-5g-tu9" firstAttribute="height" secondItem="CIo-Yz-sPv" secondAttribute="height" id="ezr-si-zHc"/>
-                                <constraint firstItem="fjM-5g-tu9" firstAttribute="top" secondItem="CIo-Yz-sPv" secondAttribute="top" id="msT-8h-1bK"/>
-                                <constraint firstItem="CIo-Yz-sPv" firstAttribute="height" secondItem="PaV-yH-J99" secondAttribute="height" multiplier="0.8" id="qPl-hW-TwR"/>
-                                <constraint firstItem="CIo-Yz-sPv" firstAttribute="width" secondItem="PaV-yH-J99" secondAttribute="width" multiplier="0.5" id="sSR-Ek-pMJ"/>
-                                <constraint firstItem="0QT-KN-uTf" firstAttribute="leading" secondItem="PaV-yH-J99" secondAttribute="leading" constant="8" id="smX-MY-IEe"/>
+                                <constraint firstAttribute="centerY" secondItem="oJe-oh-FTU" secondAttribute="centerY" id="dAN-K5-Vaa"/>
+                                <constraint firstItem="oJe-oh-FTU" firstAttribute="height" secondItem="PaV-yH-J99" secondAttribute="height" multiplier="0.8" id="dSh-6L-4dr"/>
+                                <constraint firstItem="oJe-oh-FTU" firstAttribute="width" secondItem="PaV-yH-J99" secondAttribute="width" multiplier="0.8" id="gI8-tX-Uip"/>
+                                <constraint firstAttribute="centerX" secondItem="oJe-oh-FTU" secondAttribute="centerX" id="jkN-1c-9Fp"/>
                             </constraints>
-                            <variation key="default">
-                                <mask key="constraints">
-                                    <exclude reference="D0j-6K-fV2"/>
-                                </mask>
-                            </variation>
                         </view>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4jY-WU-sPi">
                             <rect key="frame" x="0.0" y="40" width="600" height="560"/>
